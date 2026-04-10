@@ -11,10 +11,12 @@ func divide(a, b int) int {
 		}
 	}()
 	panic("something went wrong") // 手动 panic 的使用方法
+	fmt.Println("continue")
 	return a / b
 }
 
 func main() {
 	a, b := 5, 0
 	fmt.Println(divide(a, b))
+	fmt.Println("continue")
 }
